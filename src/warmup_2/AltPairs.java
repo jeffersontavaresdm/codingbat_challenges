@@ -10,25 +10,21 @@ package warmup_2;
 public class AltPairs {
 
     public static void main(String[] args) {
+        System.out.println(altPairs("z"));
+        System.out.println(altPairs("yay"));
         System.out.println(altPairs("kitten"));
         System.out.println(altPairs("Chocolate"));
         System.out.println(altPairs("CodingHorror"));
-        System.out.println(altPairs("01..45..89..XZ.."));
     }
 
     public static String altPairs(String str) {
         StringBuilder result = new StringBuilder();
 
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (i == count) {
-                result.append(str.charAt(i));
-                i++;
-                count = count + 2;
-                if (str.length() > i) {
-                    result.append(str.charAt(i));
-                    count = count + 2;
-                }
+        for (int i = 0; i < str.length(); i = i + 4) {
+            result.append(str.charAt(i));
+
+            if (str.length() > (i + 1)) {
+                result.append(str.charAt(i + 1));
             }
         }
 
