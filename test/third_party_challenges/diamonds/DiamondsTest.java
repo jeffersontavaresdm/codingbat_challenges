@@ -7,7 +7,7 @@ import third_party_challenges.diamonds.solutions.Solution01;
 public class DiamondsTest {
 
   @Test
-  void solution01Test() {
+  public void solution01Test() {
     String diamonds01 = Solution01.diamondCut("**<**<**<**<**<**<**<**<**>>>>>>>>*****");
     String diamonds02 = Solution01.diamondCut("<<<*<<**<<<<>*****>>**>>**>>>********>>");
     String diamonds03 = Solution01.diamondCut("<*<*<*<*<*<*<*<*<*<*>*>*>*>*>*>*>*>*>*>");

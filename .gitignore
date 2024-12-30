@@ -32,3 +32,5 @@ bin/
 
 ### .iml ###
 codingbat_challenges/codingbat_challenges.iml
+
+target/
