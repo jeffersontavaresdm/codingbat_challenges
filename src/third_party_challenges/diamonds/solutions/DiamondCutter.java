@@ -3,7 +3,7 @@ package third_party_challenges.diamonds.solutions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution01 {
+public class DiamondCutter {
 
   public static long diamondCount(String diamonds) {
     String[] separateDiamonds = new String[diamonds.length() / 2];
