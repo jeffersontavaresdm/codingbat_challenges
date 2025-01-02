@@ -8,40 +8,58 @@ public class DiamondsCutterTest {
 
   @Test
   public void shouldReturnExpectedDiamondCutForFirstInput() {
-    String diamonds01 = DiamondCutter.diamondCut("**<**<**<**<**<**<**<**<**>>>>>>>>*****");
-    Assertions.assertEquals("<><><><><><><><>", diamonds01);
+    String uncutDiamonds = "**<**<**<**<**<**<**<**<**>>>>>>>>*****";
+
+    String result = DiamondCutter.diamondCut(uncutDiamonds);
+
+    Assertions.assertEquals("<><><><><><><><>", result);
   }
 
   @Test
   public void shouldReturnExpectedDiamondCutForSecondInput() {
-    String diamonds02 = DiamondCutter.diamondCut("<<<*<<**<<<<>*****>>**>>**>>>********>>");
-    Assertions.assertEquals("<><><><><><><><><>", diamonds02);
+    String uncutDiamonds = "<<<*<<**<<<<>*****>>**>>**>>>********>>";
+
+    String result = DiamondCutter.diamondCut(uncutDiamonds);
+
+    Assertions.assertEquals("<><><><><><><><><>", result);
   }
 
   @Test
   public void shouldReturnExpectedDiamondCutForThirdInput() {
-    String diamonds03 = DiamondCutter.diamondCut("<*<*<*<*<*<*<*<*<*<*>*>*>*>*>*>*>*>*>*>");
-    Assertions.assertEquals("<><><><><><><><><><>", diamonds03);
+    String uncutDiamonds = "<*<*<*<*<*<*<*<*<*<*>*>*>*>*>*>*>*>*>*>";
+
+    String result = DiamondCutter.diamondCut(uncutDiamonds);
+
+    Assertions.assertEquals("<><><><><><><><><><>", result);
   }
 
   @Test
   public void shouldReturnCorrectDiamondCountForFirstInput() {
-    String diamonds01 = DiamondCutter.diamondCut("**<**<**<**<**<**<**<**<**>>>>>>>>*****");
-    Long count = DiamondCutter.diamondCount(diamonds01);
+    String uncutDiamonds = "**<**<**<**<**<**<**<**<**>>>>>>>>*****";
+
+    String result = DiamondCutter.diamondCut(uncutDiamonds);
+    Long count = DiamondCutter.diamondCount(result);
+
     Assertions.assertEquals(8, count);
   }
 
   @Test
   public void shouldReturnCorrectDiamondCountForSecondInput() {
-    String diamonds02 = DiamondCutter.diamondCut("<<<*<<**<<<<>*****>>**>>**>>>********>>");
-    Long count = DiamondCutter.diamondCount(diamonds02);
+    String uncutDiamonds = "<<<*<<**<<<<>*****>>**>>**>>>********>>";
+
+    String result = DiamondCutter.diamondCut(uncutDiamonds);
+    Long count = DiamondCutter.diamondCount(result);
+
     Assertions.assertEquals(9, count);
   }
 
   @Test
   public void shouldReturnCorrectDiamondCountForThirdInput() {
-    String diamonds03 = DiamondCutter.diamondCut("<*<*<*<*<*<*<*<*<*<*>*>*>*>*>*>*>*>*>*>");
-    Long count = DiamondCutter.diamondCount(diamonds03);
+    String uncutDiamonds = "<*<*<*<*<*<*<*<*<*<*>*>*>*>*>*>*>*>*>*>";
+
+    String result = DiamondCutter.diamondCut(uncutDiamonds);
+    Long count = DiamondCutter.diamondCount(result);
+
     Assertions.assertEquals(10, count);
   }
 }
