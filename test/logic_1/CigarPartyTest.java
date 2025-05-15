@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class CigarPartyTest {
 
   @Test
-  public void shoudlReturnFalseWhenCigarsLessThan40() {
+  public void givenWeekdayAndLessThan40Cigars_whenCheckingParty_shouldReturnFalse() {
     int cigars = 30;
     boolean isWeekend = false;
 
@@ -16,7 +16,7 @@ class CigarPartyTest {
   }
 
   @Test
-  public void shoudlReturnTrueWhenCigarsBetween40And60() {
+  public void givenWeekdayAndBetween40And60Cigars_whenCheckingParty_shouldReturnTrue() {
     int cigars = 50;
     boolean isWeekend = false;
 
@@ -26,7 +26,7 @@ class CigarPartyTest {
   }
 
   @Test
-  public void shoudlReturnTrueWhenCigarsGreaterThan60ButIsWeekend() {
+  public void givenWeekendAndMoreThan60Cigars_whenCheckingParty_shouldReturnTrue() {
     int cigars = 70;
     boolean isWeekend = true;
 
@@ -36,7 +36,7 @@ class CigarPartyTest {
   }
 
   @Test
-  public void shoudlReturnFalseIfIsWeekendButCigarsLessThan40() {
+  public void givenWeekendAndLessThan40Cigars_whenCheckingParty_shouldReturnFalse() {
     int cigars = 30;
     boolean isWeekend = true;
 
