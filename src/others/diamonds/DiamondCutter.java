@@ -1,4 +1,4 @@
-package third_party_challenges.diamonds.solutions;
+package others.diamonds;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,8 +1,8 @@
-package third_party_challenges.lists;
+package others.lists;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import third_party_challenges.list.SortedList;
+import others.list.SortedList;
 
 import java.util.Arrays;
 

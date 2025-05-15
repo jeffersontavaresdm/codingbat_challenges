@@ -13,4 +13,4 @@
 
 #
 
-**To test go to:** _test/third_party_challenges/lists/SortedListTest.java_
+**To test go to:** _test/others/lists/SortedListTest.java_

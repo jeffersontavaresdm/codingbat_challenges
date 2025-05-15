@@ -15,4 +15,4 @@
 
 #
 
-**To test go to:** _test/third_party_challenges/diamonds/DiamondsTest.java_
+**To test go to:** _test/others/diamonds/DiamondsTest.java_

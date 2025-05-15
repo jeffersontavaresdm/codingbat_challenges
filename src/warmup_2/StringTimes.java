@@ -2,18 +2,9 @@ package warmup_2;
 
 public class StringTimes {
 
-  public static void main(String[] args) {
-    System.out.println(stringTimes("Hi", 2));
-    System.out.println(stringTimes("Hi", 3));
-    System.out.println(stringTimes("Hi", 1));
-
-    System.out.println(deprecatedStringTimes("Hi", 2));
-    System.out.println(deprecatedStringTimes("Hi", 3));
-    System.out.println(deprecatedStringTimes("Hi", 1));
-  }
-
   /**
-   * Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+   * Dada uma string e um inteiro não-negativo n, retorna uma string maior
+   * contendo n cópias da string original.
    * <p>
    * stringTimes("Hi", 2) → "HiHi"
    * stringTimes("Hi", 3) → "HiHiHi"

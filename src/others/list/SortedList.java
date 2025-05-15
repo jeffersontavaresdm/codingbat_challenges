@@ -1,4 +1,4 @@
-package third_party_challenges.list;
+package others.list;
 
 import java.util.Arrays;
 import java.util.List;

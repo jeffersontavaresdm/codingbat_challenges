@@ -1,8 +1,7 @@
-package third_party_challenges.diamonds;
+package others.diamonds;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import third_party_challenges.diamonds.solutions.DiamondCutter;
 
 public class DiamondsCutterTest {
 
